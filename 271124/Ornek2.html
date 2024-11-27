@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Uygulamaları</title>
+</head>
+<body>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post"></form>
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="isim">İsim</label><br>
+        <input type="text" id="isim" name="isim"><br><br>
+
+        <label for="soyad">Soyad</label><br>
+        <input type="text" id="soyad" name="soyad"><br><br>
+
+        <label for="cinsiyet">Cinsiyet</label><br>
+        <input type="radio" id="kiz" name="cinsiyet">
+        <label for="cinsiyet">KIZ</label>
+        <input type="radio" id="Erkek" name="cinsiyet">
+        <label for="cinsiyet">ERKEK</label><br><br>
+
+        <label for="Ysehir">Yaşadığınız Şehir</label><br>
+        <input type="text" id="Ysehir" name="Ysehir"><br><br>
+
+        <label for="Dtarih">Doğum Tarihi</label> <br>
+        <input type="date" name="Dtarih" id="Dtarih">
+    </fieldset>
+
+    <fieldset>
+        <legend>Eğitim Bilgileri</legend>
+        <label for="okul">Okul</label><br><br>
+        <input type="text" id="okul" name="okul" ><br><br>
+
+        <label for="sinif">Sınıf</label><br>
+        <input type="text" name="sinif" id="sinif"><br><br>
+    
+        <label for="Bolum">Bölümünüz</label><br>
+        <select name="Bolum" id="Bolum">
+            <option value="1">bilişim Teknolojisi</option>
+            <option value="2">Çocuk Gelişimi</option>
+            <option value="3">Grafik ve Fotoğrafcılık</option>
+            <option value="4">Moda Tasarımı</option>
+        </select><br><br>
+        <button type="submit">Kaydet</button>
+        </fieldset>
+   
+        <fieldset>
+            <legend>Ek Bilgiler</legend>
+            <!--textarea etiketi çok satırla veri girişi için kullanılır-->
+            <!--textarea için cols tek satırda bulunan karakter sayısını rows ise satır sayısını belirtir-->
+            <textarea name="not" id="not" cols="35" rows="8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint numquam labore earum eius consequatur id autem doloremque incidunt exercitationem delectus? Unde, laboriosam? Excepturi similique ratione eos quod? Assumenda, commodi officiis!</textarea><br>
+
+            <input type="checkbox" name="kabul" id="kabul" >
+            <label for="kabul">Bilgileri Kabul Et</label>
+            <input type="checkbox" name="cerez" id="cerez">
+            <label for="cerez">Cerezleri kabul et</label>
+        </fieldset>
+
+
+    </fieldset>
+</body>
+</html>

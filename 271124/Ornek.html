@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Uygulamaları</title>
+</head>
+<body>
+    <h1>Select ve Fieldset Kullanımı</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+            <label for="okul">Okul</label><br><br>
+            <input type="text" id="okul" name="okul" ><br><br>
+
+            <label for="sinif">Sınıf</label><br>
+            <input type="text" name="sinif" id="sinif"><br><br>
+        
+            <label for="Bolum">Bölümünüz</label><br>
+            <select name="Bolum" id="Bolum">
+                <option value="1">bilişim Teknolojisi</option>
+                <option value="2">Çocuk Gelişimi</option>
+                <option value="3">Grafik ve Fotoğrafcılık</option>
+                <option value="4">Moda Tasarımı</option>
+            </select><br><br>
+            <button type="submit">Kaydet</button>
+       
+            <fieldset>
+                <legend>Ek Bilgiler</legend>
+                <!--textarea etiketi çok satırla veri girişi için kullanılır-->
+                <!--textarea için cols tek satırda bulunan karakter sayısını rows ise satır sayısını belirtir-->
+                <textarea name="not" id="not" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, dolore sint iste deserunt temporibus hic natus nobis dolor maiores soluta pariatur exercitationem ab dolores, laudantium ipsum laboriosam. Sit, autem pariatur!</textarea>
+            </fieldset>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
